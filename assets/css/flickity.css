@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.carousel {
+  background: #FAFAFA;
+}
+
+.carousel-cell {
+  width: 66%;
+  height: 36rem;
+  margin-right: 10px;
+  background-color: black;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+.carousel-cell img {
+  width: 100%;
+  height: 100%;
+}
+/* cell number */
+
+/* .carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 200px;
+  font-size: 80px;
+ 
+} */
+
+@media only screen and (max-width: 600px) {
+  .carousel-cell {
+    width: 100%;
+    height: 17rem;
+  }
+}
